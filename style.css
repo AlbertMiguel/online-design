@@ -8,6 +8,7 @@
     font-size: 62.5%;
 
     --font-primy: "Montserrat", Sans-serif;
+    --font-alternative: 'Montserrat Alternates', sans-serif;
 
     --line-height01: 3rem; 
 
@@ -15,8 +16,10 @@
     --cor-preta: black;
 
     --color01: #51CEFF;
-    --color02: rgb(20, 40, 66);
-    --color03:  #9FE6A5;
+    --color02: #142842;
+    --color03: #9FE6A5;
+    --color04: #00668d;
+    --color05: #ff4444
 }
 
 body {
@@ -214,7 +217,7 @@ header {
     font-family: var(--font-primy);
     font-size: 1.5rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .sec-two-button {
@@ -232,7 +235,7 @@ header {
     border-radius: 10px;
     font-family: var(--font-primy);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .sec-two-button a:hover {
@@ -330,5 +333,95 @@ header {
 .logos img {
     width: 100%;
     border-radius: 1rem;
+    box-shadow: 0px 0px 30px 0px black;
 }
+
+.sec-seven {
+    width: 100%;
+    padding: 2rem;
+}
+
+.sec-seven-topo img {
+    width: 100%;
+}
+
+.sec-seven .produto {
+    padding: 1rem;
+    color: var(--cor-branca);
+    background-color: var(--color02);
+    margin: 2rem auto;
+    border-radius: 2rem;
+    font-family: var(--font-primy);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prata {
+    background: var(--color04) !important;
+}
+
+.sec-seven .produto h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.sec-seven .produto p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+div.line-pre {
+    border-bottom: 4px solid #03151a;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.button-preco {
+    text-align: center;
+    width: 100%;
+    color: var(--color02);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    background: var(--color03);
+    border-radius: 10px;
+    font-family: var(--font-primy);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.button-preco:hover {
+    background: #2b7431;
+    color: var(--color03);
+}
+
+.produto ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.38rem;
+    font-family: var(--font-alternative);
+    margin: 1rem;
+    font-weight: 500;
+}
+
+.icons-do {
+    width: 2rem;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.preco-ant {
+    text-decoration: line-through;
+    color: var(--color05);
+    font-size: 2.9rem;
+    text-align: center; 
+}
+
+.preco {
+    margin: -1.5rem auto 4rem !important;
+    font-size: 2.9rem;
+    text-align: center; 
+}
+
 
