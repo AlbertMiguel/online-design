@@ -19,7 +19,12 @@
     --color02: #142842;
     --color03: #9FE6A5;
     --color04: #00668d;
-    --color05: #ff4444
+    --color05: #ff4444;
+    --color06: #0494cc;
+
+    --background-linear: linear-gradient(135deg, var(--color01), var(--color02), var(--color02));
+
+    --shadow01: 0 0 3rem 0 rgba(0, 0, 0, 0.616);
 }
 
 body {
@@ -35,6 +40,7 @@ body {
 header {
     margin-top: 0px;
     margin-bottom: -2.3rem;
+    width: 100%;
 }
 
 .elementor-background-slideshow {
@@ -139,6 +145,7 @@ header {
 
 .sec-one {
     padding: 3rem 1rem;
+    width: 100%;
 }
 
 .youtube-one {
@@ -176,6 +183,7 @@ header {
     background-color: var(--color02);
     border-radius: 2rem ;
     padding: 2rem;
+    width: 100%;
 }
 
 .sec-two-title {
@@ -253,6 +261,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    width: 100%;
 }
 
 .sec-four {
@@ -299,6 +308,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .sec-five h1 {
@@ -317,6 +327,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .sec-six h1 {
@@ -343,6 +354,10 @@ header {
 
 .sec-seven-topo img {
     width: 100%;
+}
+
+.sec-seven h2 {
+    margin-top: 2.5rem;
 }
 
 .sec-seven .produto {
@@ -424,6 +439,10 @@ div.line-pre {
     text-align: center; 
 }
 
+.sec-heit {
+    width: 100%;
+}
+
 .exemplos {
     width: 100%;
     padding: 1rem;
@@ -431,4 +450,95 @@ div.line-pre {
 
 .exemplos img {
     width: 100%;
+}
+
+.sec-nine {
+    width: 100%;
+    padding: 2rem;
+}
+
+.papelaria {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.papelaria img {
+    border-radius: 2rem;
+    width: 100%;
+    box-shadow: var(--shadow01);
+}
+
+.sec-ten {
+    color: var(--color02);
+    font-family: var(--font-primy);
+    font-weight: 700;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.7rem;
+    text-shadow: var(--shadow01);
+}
+
+.sec-ten span {
+    font-size: 6.9rem;
+}
+
+.sec-eleven {
+    width: 100%;
+}
+
+.eleven {
+    background: var(--background-linear);
+    
+}
+
+.sec-eleven h1 {
+    text-align: center;
+    color: var(--cor-branca);
+    font-size: 2.3rem;
+    font-family: var(--font-primy);
+    font-weight: 400;
+    text-shadow: var(--shadow01);
+    padding: 3rem 2rem 4rem;
+}
+
+.sec-eleven img {
+    display: block;
+    width: 6rem;
+    margin: auto;
+    margin-top: -3rem;
+}
+
+.sec-twoelve {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cliente {
+    background: var(--background-linear);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    color: var(--cor-branca);
+    font-family: var(--font-primy);
+    text-align: center;
+    box-shadow: var(--shadow01);
+}
+
+.cliente p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.cliente h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.cliente h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
 }
