@@ -424,4 +424,11 @@ div.line-pre {
     text-align: center; 
 }
 
+.exemplos {
+    width: 100%;
+    padding: 1rem;
+}
 
+.exemplos img {
+    width: 100%;
+}
