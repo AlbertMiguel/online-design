@@ -232,7 +232,7 @@ header {
     border-radius: 10px;
     font-family: var(--font-primy);
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .sec-two-button a:hover {
@@ -303,10 +303,32 @@ header {
 }
 
 .sec-five div {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .sec-six {
-    
+    text-align: center;
+    color: var(--color02);
+    font-family: var(--font-primy);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec-six h1 {
+    font-size: 2rem;
+}
+
+.logos {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--color02);
+    border-radius: 2rem;
+}
+
+.logos img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
