@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --font-primy: "Montserrat", Sans-serif;
+
+    --line-height01: 3rem; 
+
+    --cor-branca: white;
+    --cor-preta: black;
+
+    --color01: #51CEFF;
+    --color02: rgb(20, 40, 66);
+    --color03:  #9FE6A5;
+}
+
+body {
+    position: relative;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 0px;
+    margin-bottom: -2.3rem;
+}
+
+.elementor-background-slideshow {
+    position: relative;
+    height: 40rem;
+    padding: 2rem;
+}
+
+.header-background {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    z-index: 1;
+    background-position: center center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(320deg, #0b1727f1 77%, #00546bef 100%);
+}
+
+.d-logo {
+    padding-top: 2rem;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    width: 12.5rem;
+    height: 4rem;
+    display: block;
+    margin: auto;
+}
+
+.title-one, .title-two {
+    margin: 2rem auto;
+}
+
+.first-title {
+    text-align: center;
+    font-family: var(--font-primy);
+    color: var(--cor-branca);
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-shadow: -52px 0px 30px rgba(165.17624740600587, 164.09901100987975, 164.09901100987975, 0.51);
+    line-height: var(--line-height01);
+}
+
+.title-two h2:first-child {
+    color: var(--color01);
+    font-family: var(--font-primy);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.title-two h2:last-child {
+    color: white;
+    font-family: var(--font-primy);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.header-content .line {
+    border-bottom: solid #51CEFF;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 50%;
+}
+
+.header-text {
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: -10rem;
+}
+
+.text-container img {
+    width: 100%;
+    height: auto;
+}
+
+.sec-one {
+    padding: 3rem 1rem;
+}
+
+.youtube-one {
+    margin: auto ;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.youtube-one iframe {
+    border-radius: 1.9rem;
+    width: 100%;
+}
+
+.sec-text {
+    text-align: center;
+}
+
+.sec-text h2 {
+    font-size: 2.1rem;
+    color: var(--color02);
+    font-family: var(--font-primy);
+
+}
+
+.sec-one-galeria {
+    width: 100%;
+    margin: auto;
+}
+
+.sec-one-galeria img{
+    width: 100%;
+}
+
+.sec-two {
+    background-color: var(--color02);
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem;
+}
+
+.sec-two-title {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.sec-two-title img {
+    stroke: white;
+    width: 4rem;
+}
+
+.sec-two-title span {
+    padding-top: 1rem;
+    color: white ;
+    font-family: var(--font-primy);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.3rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+
+.sec-two-yt {
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.sec-two-yt iframe {
+    border-radius: 1.9rem;
+    width: 100%;
+}
+
+
+.sec-two-text p{
+    color: var(--cor-branca);
+    font-family: var(--font-primy);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.sec-two-button {
+    width: 100%;
+    margin: 3rem auto 2.5rem;
+    text-align: center;
+}
+
+.sec-two-button a {
+    width: 100%;
+    color: var(--color02);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    background: var(--color03);
+    border-radius: 10px;
+    font-family: var(--font-primy);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.sec-two-button a:hover {
+    background: #2b7431;
+    color: var(--color03);
+}
+
+.sec-t {
+    padding: 2.5rem;
+    font-family: var(--font-primy);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.sec-f {
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
