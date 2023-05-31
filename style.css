@@ -171,7 +171,7 @@ header {
 
 .sec-two {
     background-color: var(--color02);
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 2rem ;
     padding: 2rem;
 }
 
@@ -254,10 +254,36 @@ header {
 
 .sec-f {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    background-color: var(--color02);
+    color: var(--cor-branca);
+    font-family: var(--font-primy);
+    border-radius: 1.9rem;
+}
+
+.sec-f img {
+    width: 8rem;
+    height: 8rem;
+    padding: 7px;
+    background-color: #0494cc ;
+    border-radius: 50%;
+    margin: auto;
+}
+.sec-f img:first-child {
+    margin-top: 2rem;
+}
+
+.sec-f h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.sec-f p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
