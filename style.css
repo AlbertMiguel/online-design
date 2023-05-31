@@ -252,7 +252,7 @@ header {
     gap: 4rem;
 }
 
-.sec-f {
+.sec-four {
     width: 100%;
     padding: 1.5rem;
     margin: auto;
@@ -266,7 +266,7 @@ header {
     border-radius: 1.9rem;
 }
 
-.sec-f img {
+.sec-four img {
     width: 8rem;
     height: 8rem;
     padding: 7px;
@@ -274,16 +274,39 @@ header {
     border-radius: 50%;
     margin: auto;
 }
-.sec-f img:first-child {
+.sec-four img:first-child {
     margin-top: 2rem;
 }
 
-.sec-f h2{
+.sec-four h2{
     font-size: 2rem;
     font-weight: 500;
 }
 
-.sec-f p {
+.sec-four p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
+
+.sec-five {
+    text-align: center;
+    color: var(--color02);
+    font-family: var(--font-primy);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec-five h1 {
+    font-size: 2.1rem;
+}
+
+.sec-five div {
+    margin-bottom: 2rem;
+}
+
+.sec-six {
+    
+}
+
