@@ -1033,6 +1033,13 @@ header a:hover {
         padding: 4rem;
         display: flex;
         gap: 3rem;
+        align-items: center;
+        margin: auto;
+    }
+
+    .time-text, .time-img {
+        width: 57rem;
+        margin: auto;
     }
 
     .duvidas-center {
