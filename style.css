@@ -8,26 +8,53 @@
     font-size: 62.5%;
 
     --font-primy: "Montserrat", Sans-serif;
-    --font-alternative: 'Montserrat Alternates', sans-serif;
+    --font-alternative: 'poppins', sans-serif;
 
     --line-height01: 3rem; 
 
     --cor-branca: white;
     --cor-preta: black;
 
+    /* 
+    
     --color01: #51CEFF;
     --color02: #142842;
     --color03: #9FE6A5;
     --color04: #00668d;
     --color05: #ff4444;
     --color06: #0494cc;
+    
+    */
+
+    --color01: #F7BA2C;
+    --color02: #EA5459;
+    --color03: #9FE6A5;
+    --color04: #F7BA2C;
+    --color05: red;
+    --color06: #0494cc;
+
+    --whats-color: #1eca41;
+    --whats-font: #194e24;
+
+    /* background: hsla(42, 93%, 57%, 1);
+    
+    background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#f7ba2c", endColorstr="#ea5459", GradientType=1); */
 
     --background-linear: linear-gradient(187deg, var(--color04) 0%, var(--color02) 100%);
+    --background-linearuu: 
 
     --shadow01: 0 0 3rem 0 rgba(0, 0, 0, 0.616);
     --shadow02: 1px 1px 2rem rgba(0, 0, 0, 0.603);
     --shadow03: 1px 1px 2rem white;
 }
+
+
 
 body {
     position: relative;
@@ -84,8 +111,7 @@ header {
 
 .logo {
     margin-bottom: 2rem;
-    width: 12.5rem;
-    height: 4rem;
+
     display: block;
     margin: auto;
 }
@@ -122,32 +148,32 @@ header {
 }
 
 .line {
-    border-bottom: solid #51CEFF;
+    border-bottom: solid var(--color01);
     width: 80%;
     margin: 2rem auto;
     border-radius: 50%;
 }
 
-header a {
+.link-header a{
     display: block;
     width: 100%;
-    color: var(--color02);
+    color: var(--whats-font) !important;
     text-decoration: none;
     padding: 1rem 1.3rem;
-    background: var(--color03);
+    background: var(--whats-color) !important;
     border-radius: 10px;
-    font-family: var(--font-primy);
+    font-family: var(--font-primy) ;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     box-shadow: var(--shadow01);
-    margin: auto;
+    margin: 2rem auto;
     text-align: center;
     max-width: 76.8rem;
 }
 
-header a:hover {
-    background: #2b7431;
-    color: var(--color03);
+.link-header a:hover {
+    background: var(--whats-font) !important;
+    color: var(--whats-color) !important;
 }
 
 .header-text {
@@ -166,7 +192,7 @@ header a:hover {
 .text-container img {
     width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .sec-one {
@@ -272,7 +298,7 @@ header a:hover {
     text-align: center;
 }
 
-.sec-two-button a {
+/* .sec-two-button a {
     margin: auto;
     min-width: 300px;
     width: 80%;
@@ -283,7 +309,7 @@ header a:hover {
     border-radius: 10px;
     font-family: var(--font-primy);
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     box-shadow: var(--shadow01);
     display: block;
 }
@@ -291,7 +317,7 @@ header a:hover {
 .sec-two-button a:hover {
     background: #2b7431;
     color: var(--color03);
-}
+} */
 
 .sec-t {
     padding: 2.5rem;
@@ -306,6 +332,14 @@ header a:hover {
     width: 100%;
     max-width: 108rem;
     margin: auto;
+}
+
+.sec-t p:first-child {
+    margin-top: 2rem;
+}
+
+.sec-t p:last-child {
+    margin-bottom: 2rem;
 }
 
 .sec-four {
@@ -340,6 +374,7 @@ header a:hover {
     font-size: 2rem;
     font-weight: 500;
     text-shadow: var(--shadow02);
+    margin: 2rem 0;
 }
 
 .sec-four p {
@@ -360,7 +395,6 @@ header a:hover {
 
 .sec-five h1 {
     font-size: 2.1rem;
-    text-shadow: var(--shadow02);
 }
 
 .sec-five div {
@@ -380,7 +414,6 @@ header a:hover {
 
 .sec-six h1 {
     font-size: 2rem;
-    text-shadow: var(--shadow02);
     max-width: 112rem;
     margin: auto;
 }
@@ -425,10 +458,6 @@ header a:hover {
     gap: 1.5rem;
     box-shadow: var(--shadow01);
 
-}
-
-.prata {
-    background: var(--color04) !important;
 }
 
 .sec-seven .produto h2 {
@@ -596,6 +625,12 @@ header a:hover {
     gap: 2rem;
 }
 
+.fala-cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .cliente {
     background: var(--background-linear);
     border-radius: 1rem;
@@ -605,6 +640,8 @@ header a:hover {
     text-align: center;
     box-shadow: var(--shadow01);
     max-width: 53rem;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 .cliente p {
@@ -624,6 +661,10 @@ header a:hover {
 
 .cliente img {
     width: 5rem;
+}
+
+.fala-cliente {
+    margin: auto;
 }
 
 .treszero h2 {
@@ -765,11 +806,34 @@ header a:hover {
     display: block;
 }
 
-.logo-vize {
+.form img {
+    width: 1.5rem;
+}
 
+.logo-vize {
     width: 100%;
     padding-top: 3rem;
 }
+
+.contatos {
+    text-align: center;
+}
+
+.contatos img {
+    width: 2rem;
+}
+
+.contatos p {
+    font-family: var(--font-primy);
+    font-size: 2rem;
+    color: white;
+}
+
+.contatos a {
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+}
+
 
 @media (min-width: 768px) {
     .logo {
@@ -1006,10 +1070,11 @@ header a:hover {
     }
 
     .fala-cliente {
-        display: flex;
-        margin: auto;
+        flex-direction: row;
         gap: 2rem;
     }
+
+    
 
     .treszero {
         width: 50rem;
@@ -1043,7 +1108,7 @@ header a:hover {
     }
 
     .duvidas-center {
-        width: 114rem;
+        max-width: 114rem;
         margin: auto;
     }
 
@@ -1051,5 +1116,6 @@ header a:hover {
         display: block;
         margin: auto;
         max-width: 20rem;
+        width: 100%;
     }
 }
