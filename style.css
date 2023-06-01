@@ -26,6 +26,7 @@
 
     --shadow01: 0 0 3rem 0 rgba(0, 0, 0, 0.616);
     --shadow02: 1px 1px 2rem rgba(0, 0, 0, 0.603);
+    --shadow03: 1px 1px 2rem white;
 }
 
 body {
@@ -47,7 +48,6 @@ header {
 
 .elementor-background-slideshow {
     position: relative;
-    height: 40rem;
     padding: 2rem;
 }
 
@@ -128,6 +128,28 @@ header {
     border-radius: 50%;
 }
 
+header a {
+    display: block;
+    width: 100%;
+    color: var(--color02);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    background: var(--color03);
+    border-radius: 10px;
+    font-family: var(--font-primy);
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow01);
+    margin: auto;
+    text-align: center;
+    max-width: 76.8rem;
+}
+
+header a:hover {
+    background: #2b7431;
+    color: var(--color03);
+}
+
 .header-text {
     width: 100%;
     overflow: hidden;
@@ -135,14 +157,16 @@ header {
 
 .text-container{
     width: 100%;
-    height: auto;
+    max-width: 76.8rem;
     position: relative;
     padding-bottom: -10rem;
+    margin: auto;
 }
 
 .text-container img {
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .sec-one {
@@ -170,7 +194,7 @@ header {
     font-size: 2.1rem;
     color: var(--color02);
     font-family: var(--font-primy);
-    text-shadow: var(--shadow02);
+    margin-top: 2rem;
 }
 
 .sec-one-galeria {
@@ -182,6 +206,10 @@ header {
     width: 100%;
 }
 
+.imgj1, .imgj2, .imgj3, .imgj4 {
+    display: none;
+}
+
 .sec-two {
     background: var(--background-linear);
     border-radius: 2rem ;
@@ -189,6 +217,7 @@ header {
     width: 100%;
     box-shadow: var(--shadow01);
 }
+
 
 .sec-two-title {
     margin: auto;
@@ -203,7 +232,7 @@ header {
     width: 4rem;
 }
 
-.sec-two-title span {
+.sec-two-title h3 {
     padding-top: 1rem;
     color: white ;
     font-family: var(--font-primy);
@@ -221,6 +250,11 @@ header {
 .sec-two-yt iframe {
     border-radius: 1.9rem;
     width: 100%;
+    display: block;
+}
+
+.sec-two-none {
+    display: none;
 }
 
 
@@ -239,16 +273,19 @@ header {
 }
 
 .sec-two-button a {
-    width: 100%;
+    margin: auto;
+    min-width: 300px;
+    width: 80%;
     color: var(--color02);
     text-decoration: none;
-    padding: 1rem 1.3rem;
+    padding: 1rem 1rem;
     background: var(--color03);
     border-radius: 10px;
     font-family: var(--font-primy);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.1rem;
     box-shadow: var(--shadow01);
+    display: block;
 }
 
 .sec-two-button a:hover {
@@ -267,6 +304,8 @@ header {
     flex-direction: column;
     gap: 4rem;
     width: 100%;
+    max-width: 108rem;
+    margin: auto;
 }
 
 .sec-four {
@@ -317,7 +356,6 @@ header {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    
 }
 
 .sec-five h1 {
@@ -343,9 +381,9 @@ header {
 .sec-six h1 {
     font-size: 2rem;
     text-shadow: var(--shadow02);
+    max-width: 112rem;
+    margin: auto;
 }
-
-
 
 .logos img {
     width: 100%;
@@ -359,8 +397,16 @@ header {
     padding: 2rem;
 }
 
-.sec-seven-topo img {
+.sec-seven-top {
     width: 100%;
+}
+
+.sec-seven-topo img {
+    display: block;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+
 }
 
 .sec-seven h2 {
@@ -378,6 +424,7 @@ header {
     flex-direction: column;
     gap: 1.5rem;
     box-shadow: var(--shadow01);
+
 }
 
 .prata {
@@ -397,9 +444,11 @@ header {
 .line-pre {
     border-bottom: 4px solid #03151a;
     border-radius: 50%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
+
 
 .button-preco {
     text-align: center;
@@ -448,6 +497,21 @@ header {
     text-align: center; 
 }
 
+.preco-ant1 {
+    display: none;
+    text-decoration: line-through;
+    color: var(--color05);
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+.preco1 {
+    display: none;
+    margin: -1.5rem auto 2rem !important;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
 .sec-heit {
     width: 100%;
 }
@@ -459,6 +523,10 @@ header {
 
 .exemplos img {
     width: 100%;
+}
+
+.exemplos img:last-child {
+    display: none;
 }
 
 .sec-nine {
@@ -536,6 +604,7 @@ header {
     font-family: var(--font-primy);
     text-align: center;
     box-shadow: var(--shadow01);
+    max-width: 53rem;
 }
 
 .cliente p {
@@ -700,4 +769,280 @@ header {
 
     width: 100%;
     padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        margin: 7rem auto 5rem;
+        width: 20rem;
+        height: 6.8rem;
+    }
+
+    .first-title {
+        font-size: 5rem;
+        line-height: 5rem;
+        max-width: 112rem;
+        margin: 4rem auto;
+        text-shadow: var(--shadow03);
+
+    }
+
+    .title-two h2:first-child {
+        font-size: 7.1rem;
+        margin: 0 0 3rem 0;
+    }
+
+    .title-two h2:last-child {
+        font-size: 4rem;
+        margin: 0 0 3rem 0;
+        text-shadow: var(--shadow03);
+    }
+
+    header .line {
+        border: none;
+    }
+
+    header a {
+        font-size: 3.6rem;
+        margin: 0 auto 5rem;
+    }
+
+    .text-container img {
+        margin-bottom: 2rem;
+    }
+    
+
+    .youtube-one {
+        display: none;
+    }
+
+    .sec-text h2 {
+        margin: 5rem auto 6rem;
+        font-size: 5.6rem;
+    }
+
+    .imgh1, .imgh2, .imgh3, .imgh4 {
+        display: none;
+    }
+
+    .sec-one-fotinhas {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .imgj1,
+    .imgj2,
+    .imgj3,
+    .imgj4 {
+        display: block; 
+        width: 50%;
+    }
+
+    .sec-two {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sec-two-flex {
+        width: 100%;
+    }
+
+    .sec-two-yt  {
+        display: none;
+    }
+
+    .sec-two-none {
+        display: block;
+        width: 100%;
+    }
+
+    .sec-two-none iframe{
+        border-radius: 1.9rem;
+        width: 100%;
+    }
+    
+    .sec-two-flex img{
+        width: 4rem;
+    }
+
+    .sec-two-flex .sec-two-title {
+        text-align: left;
+    }
+
+    .sec-two-flex h3 {
+        font-size: 4rem;
+        margin-left: 5rem;
+    }
+    
+    .sec-two-flex p {
+        font-size: 2.7rem;
+        text-align: left;
+        line-height: 3rem;
+        margin-left: 5rem;
+    }
+
+    .sec-two-flex a {
+        font-size: 1.5rem;
+    }    
+    
+    .sec-t {
+        font-size: 3.3rem;
+        line-height: 4.4rem;
+        font-weight: 400;
+    }
+
+    .sec-t p {
+        margin: 4rem 0;
+    }
+
+    .sec-four {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .onelast, .twolast {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .sec-four img {
+    margin-top: 2rem;
+    }
+
+    .sec-four h2 {
+        padding: 2rem 0;
+        font-size: 3.7rem;
+    }
+
+    .sec-four p {
+        line-height: 2.9rem;
+        font-size: 2.2rem;
+    }
+
+    .info-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec-five h1 {
+        font-size: 5.5rem;
+        margin: 5rem auto;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 65rem;
+        margin: auto;
+    }
+
+    .sec-six h1{
+        font-size: 5.5rem;
+    }
+
+    .logos-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .logos {
+        width: 90%;
+        max-width: 67.5rem;
+        margin: auto;
+    }
+
+    .sec-seven-topo {
+        margin-bottom: 10rem ;
+    }
+
+    .produto-valor {
+        display: flex;
+    }
+
+    .produto {
+        width: 40rem;
+        height: 80rem;
+    }
+
+    .preco1, .preco-ant1 {
+        display: block;
+    }
+
+    .preco, .preco-ant {
+        display: none;
+    }
+
+    .cobre .button-preco {
+        margin-top: 5rem;
+    }
+
+    .exemplos img:first-child {
+        display: none;
+    }
+
+    .exemplos img:last-child {
+        display: block;
+        max-width: 102.3rem;
+        margin: auto;
+    }
+
+    .sec-nine {
+        max-width: 120rem;
+        margin: auto;
+    }
+    
+    .papelaria-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .sec-eleven h1 {
+        font-size: 5rem;
+    }
+
+    .fala-cliente {
+        display: flex;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    .treszero {
+        width: 50rem;
+        margin-bottom: 6rem;
+    }
+
+    .sec-treteen h2 {
+        margin-top: 4rem;
+        font-size: 4rem;
+    }
+
+    .sec-treteen a {
+        display: block;
+        margin: auto;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        width: 48rem;
+    }
+
+    .time {
+        padding: 4rem;
+        display: flex;
+        gap: 3rem;
+    }
+
+    .duvidas-center {
+        width: 114rem;
+        margin: auto;
+    }
+
+    .logo-vize {
+        display: block;
+        margin: auto;
+        max-width: 20rem;
+    }
 }
