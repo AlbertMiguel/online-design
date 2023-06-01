@@ -153,7 +153,7 @@ header {
 .youtube-one {
     margin: auto ;
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 2rem auto 4rem;
 }
 
 .youtube-one iframe {
@@ -300,6 +300,7 @@ header {
 .sec-four h2{
     font-size: 2rem;
     font-weight: 500;
+    text-shadow: var(--shadow02);
 }
 
 .sec-four p {
@@ -321,6 +322,7 @@ header {
 
 .sec-five h1 {
     font-size: 2.1rem;
+    text-shadow: var(--shadow02);
 }
 
 .sec-five div {
@@ -340,20 +342,16 @@ header {
 
 .sec-six h1 {
     font-size: 2rem;
+    text-shadow: var(--shadow02);
 }
 
-.logos {
-    width: 100%;
-    padding: 2rem;
-    background: var(--background-linear);
-    border-radius: 2rem;
-    margin: 2rem auto;
-}
+
 
 .logos img {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0px 0px 30px 0px black;
+    box-shadow: var(--shadow01);
+    margin: 1.2rem auto;
 }
 
 .sec-seven {
@@ -379,6 +377,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    box-shadow: var(--shadow01);
 }
 
 .prata {
@@ -413,6 +412,7 @@ header {
     font-family: var(--font-primy);
     font-weight: 600;
     font-size: 1.5rem;
+    box-shadow: var(--shadow02);
 }
 
 .button-preco:hover {
@@ -486,7 +486,7 @@ header {
     text-align: center;
     padding: 3rem;
     font-size: 1.7rem;
-    text-shadow: var(--shadow01);
+    text-shadow: var(--shadow02);
 }
 
 .sec-ten span {
@@ -510,6 +510,7 @@ header {
     font-weight: 400;
     text-shadow: var(--shadow01);
     padding: 3rem 2rem 4rem;
+    text-shadow: var(--shadow02);
 }
 
 .sec-eleven img {
@@ -613,11 +614,12 @@ header {
 }
 
 .time img {
-    width: 100%
+    width: 100%;
 }
 
 .time h2 {
-    color: var(--color01)
+    color: var(--color01);
+    text-shadow: var(--shadow02);
 }
 
 .time p {
