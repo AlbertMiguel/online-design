@@ -121,7 +121,7 @@ header {
     margin-bottom: 1rem;
 }
 
-.header-content .line {
+.line {
     border-bottom: solid #51CEFF;
     width: 80%;
     margin: 2rem auto;
@@ -395,7 +395,7 @@ header {
     text-align: center;
 }
 
-div.line-pre {
+.line-pre {
     border-bottom: 4px solid #03151a;
     border-radius: 50%;
     margin-top: 3rem;
@@ -563,4 +563,139 @@ div.line-pre {
 
 .treszero span {
     font-size: 1.5rem;
+}
+
+.sec-treteen {
+    background: var(--background-linear);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    color: var(--cor-branca);
+    font-family: var(--font-primy);
+    text-align: center;
+    box-shadow: var(--shadow02);
+    width: 100%;
+}
+.sec-treteen h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem ;
+    font-weight: 500;
+}
+
+.sec-treteen .line {
+    margin: 4rem auto;
+    width: 100%;
+}
+
+.sec-treteen a {
+    width: 100%;
+    color: var(--color02);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    background: var(--color03);
+    border-radius: 10px;
+    font-family: var(--font-primy);
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow01);
+}
+
+.sec-treteen a:hover {
+    background: #2b7431;
+    color: var(--color03);
+}
+
+.time {
+    font-size: 1.5rem;
+    font-family: var(--font-primy);
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.time img {
+    width: 100%
+}
+
+.time h2 {
+    color: var(--color01)
+}
+
+.time p {
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 1.5rem ;
+}
+
+.redes-sociais {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais img{
+    width: 5rem;
+    text-align: center;
+}
+
+.duvidas {
+    background: var(--background-linear);
+    padding: 2rem;
+    font-family: var(--font-primy);
+    color: var(--cor-branca);
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: var(--shadow01);
+    width: 100%;
+}
+
+.duvidas h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+
+.form {
+    color: white;
+    font-size: 1.7rem;
+    font-family: var(--font-primy);
+    line-height: 2.7rem;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+}
+
+.form label {
+    display: block;
+    text-decoration: underline;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.form p {
+    font-size: 1.5rem;
+    margin: 1.4rem 1rem;
+    font-weight: 400;
+
+}
+
+.form .toggle-checkbox {
+    display: none;
+}
+
+.form .toggle-label {
+    cursor: pointer;
+}
+
+.form .description {
+    display: none;
+}
+
+.form .toggle-checkbox:checked~.description {
+    display: block;
+}
+
+.logo-vize {
+
+    width: 100%;
+    padding-top: 3rem;
 }
